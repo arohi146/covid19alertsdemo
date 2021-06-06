@@ -14,22 +14,6 @@ class RootPage extends Component {
         <StatusBar backgroundColor="#fff" barStyle="dark-content" />
         <ScrollView style={{ backgroundColor: '#fff' }}>
           <Header />
-          <ScrollView
-            horizontal
-            scrollEnabled
-            pagingEnabled
-            decelerationRate="fast"
-            snapToInterval={330}
-            contentContainerStyle={{
-              // height: height / 4.5,
-              height: 125,
-              justifyContent: 'center',
-              alignItems: 'center',
-              backgroundColor: '#fff',
-              marginHorizontal: 10,
-            }}>
-            <InfoCards />
-          </ScrollView>
           <View
             style={{
               paddingLeft: 10,
