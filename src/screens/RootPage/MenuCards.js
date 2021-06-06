@@ -43,68 +43,20 @@ const MenuCards = ({ navigation }) => {
 
   return (
     <>
-      <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
-        <TouchableOpacity //LATEST NEWS
-          onPress={() => navigation.push('News')}
-          style={{
-            backgroundColor: '#000080',
-            borderWidth: 0,
-            borderRadius: 0,
-            flex: 1,
-            marginHorizontal: 12,
-            shadowColor: '#000',
-            shadowOffset: {
-              width: 0,
-              height: 3,
-            },
-            shadowOpacity: 0.27,
-            shadowRadius: 4.65,
-
-            elevation: 6,
-          }}>
-          <Icon
-            style={{
-              position: 'absolute',
-              top: 10,
-              right: 10,
-            }}
-            name="newspaper-outline"
-            size={35}
-            color="#fff"
-          />
-          <Text
-            style={{
-              ...material.captionWhite,
-              left: 5,
-              top: 30,
-              position: 'absolute',
-            }}>
-            LATEST
-          </Text>
-          <Text
-            style={{
-              position: 'absolute',
-              bottom: 0,
-              left: 5,
-              ...material.display2White,
-            }}>
-            NEWS
-          </Text>
-        </TouchableOpacity>
-        </View>
-        <View
+      <View
             style={{
               paddingLeft: 10,
               backgroundColor: '#fff',
-              height: 30,
+              height: 100,
               marginVertical: 10,
               marginBottom: 15,
             }}>
             <Text style={material.headline}>
-              Data at,{' '}
+              using{' '}
               <Text style={{ ...material.headline, fontWeight: '700' }}>
-                Your Finger tips !
+              covid19 mathdro api !
               </Text>
+              
             </Text>
           </View>
           
@@ -141,7 +93,7 @@ const MenuCards = ({ navigation }) => {
               top: 30,
               position: 'absolute',
             }}>
-            LOCATION
+            Fetch
           </Text>
           <Text
             style={{
@@ -150,9 +102,11 @@ const MenuCards = ({ navigation }) => {
               left: 5,
               ...material.display2White,
             }}>
-            INFO
+            Location
           </Text>
         </TouchableOpacity>
+        </View>
+        <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
         <TouchableOpacity //SAFETY TIPS
           onPress={() => navigation.push('Tips')}
           style={{

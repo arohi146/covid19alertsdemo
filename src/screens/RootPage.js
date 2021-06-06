@@ -14,23 +14,7 @@ class RootPage extends Component {
         <StatusBar backgroundColor="#fff" barStyle="dark-content" />
         <ScrollView style={{ backgroundColor: '#fff' }}>
           <Header />
-           <View
-            style={{
-              paddingLeft: 10,
-              backgroundColor: '#fff',
-              height: 30,
-              marginVertical: 10,
-              marginBottom: 15,
-            }}>
-            <Text style={material.headline}>
-              Stay Home,{' '}
-              <Text style={{ ...material.headline, fontWeight: '700' }}>
-                Stay safe !
-              </Text>
-            </Text>
-          </View>
-          
-          <View
+         <View
             // scrollEnabled
             style={{
               justifyContent: 'flex-start',
@@ -58,6 +42,26 @@ class RootPage extends Component {
               ------
             </Text>
           </View>
+          <View
+            style={{
+              paddingLeft: 10,
+              backgroundColor: '#fff',
+              height: 30,
+              marginVertical: 10,
+              marginBottom: 15,
+              alignItems: 'center'
+            }}>
+            <Text style={{
+              ...material.headline
+              }}>
+              Stay Home,{' '}
+              <Text style={{ ...material.headline, fontWeight: '700' }}>
+                Stay safe !
+              </Text>
+            </Text>
+          </View>
+          
+         
         </ScrollView>
       </>
     );
