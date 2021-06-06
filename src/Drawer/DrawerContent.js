@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   BackHandler,
+  Alert,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/AntDesign';
@@ -32,7 +33,8 @@ export function DrawerContent(props) {
       <TouchableOpacity
         style={styles.links}
         onPress={() => {
-          props.navigation.navigate('News');
+          Alert.alert("Latest News will be implemented");
+         // props.navigation.navigate('News');
         }}>
         <Text style={styles.text}>
         <Icon
@@ -46,7 +48,8 @@ export function DrawerContent(props) {
       <TouchableOpacity
         style={styles.links}
         onPress={() => {
-          props.navigation.navigate('Search');
+          Alert.alert("Search option will be implemented");
+         //props.navigation.navigate('Search');
         }}>
         <Text style={styles.text}>
         <Icon
@@ -60,7 +63,8 @@ export function DrawerContent(props) {
       <TouchableOpacity
         style={styles.links}
         onPress={() => {
-          props.navigation.navigate('Global');
+          Alert.alert("Global links will be implemented");
+         //props.navigation.navigate('Global');
         }}>
         <Text style={styles.text}>
         <Icon
@@ -74,7 +78,8 @@ export function DrawerContent(props) {
       <TouchableOpacity
         style={styles.links}
         onPress={() => {
-          props.navigation.navigate('Time');
+          Alert.alert("Time line will be implemented");
+         //props.navigation.navigate('Time');
         }}>
         <Text style={styles.text}>
         <Icon
@@ -88,14 +93,15 @@ export function DrawerContent(props) {
       <TouchableOpacity
         style={styles.links}
         onPress={() => {
-          props.navigation.navigate('Tips');
+          Alert.alert("Tips will be implemented");
+         //props.navigation.navigate('Tips');
         }}>
         <Text style={styles.text}>Tips</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.links}
-        onPress={() => {
-          props.navigation.navigate('Links');
+        onPress={() => {Alert.alert(" will be implemented");
+         //props.navigation.navigate('Links');
         }}>
         <Text style={styles.text}>Links</Text>
       </TouchableOpacity>
