@@ -66,7 +66,7 @@ class RootPage extends Component {
               // backgroundColor: 'green',
             }}>
             <Text style={{ color: 'grey', ...material.caption }}>
-              Lernt with enthu
+            Learnt with enthu
             </Text>
             <Text style={{ color: 'grey', ...material.body1 }}>
               ------

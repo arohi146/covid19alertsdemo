@@ -97,7 +97,7 @@ class TimeSeriesPage extends Component {
            <View style={styles.inputContainer}>
            <TextInput style={styles.inputs}
                ref={'txtSearch'}
-               placeholder="Search"
+               placeholder="Enter OTP"
                underlineColorAndroid='transparent'
                onChangeText={(pincode) =>{ 
                 // this.setState({name_address})               

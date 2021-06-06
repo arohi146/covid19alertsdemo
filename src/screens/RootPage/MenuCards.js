@@ -90,6 +90,8 @@ const MenuCards = ({ navigation }) => {
             NEWS
           </Text>
         </TouchableOpacity>
+        </View>
+      <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
         <TouchableOpacity //GLOBAL STATS
           onPress={() => navigation.push('Global')}
           style={{
@@ -135,7 +137,6 @@ const MenuCards = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
       </View>
-
       <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
         <TouchableOpacity //SAFETY TIPS
           onPress={() => navigation.push('Tips')}
@@ -270,6 +271,8 @@ const MenuCards = ({ navigation }) => {
             LINKS
           </Text>
         </TouchableOpacity>
+       </View>
+      <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
         <TouchableOpacity //DATA SEARCH
           onPress={() => navigation.push('Search')}
           style={{
@@ -315,7 +318,6 @@ const MenuCards = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
       </View>
-
       <View style={{ flexDirection: 'row', height: 95, marginTop: 15 }}>
         <TouchableOpacity // How Are You Feeling Today?
           onPress={() =>
