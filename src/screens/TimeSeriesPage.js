@@ -34,7 +34,7 @@ class TimeSeriesPage extends Component {
     Alert.alert('Enter Pin');
     else
     {
-      Alert.alert(this.state.pincode);
+     // Alert.alert(this.state.pincode);
       this.makeRequest(this.state.pincode);
     }
   }
@@ -141,7 +141,7 @@ class TimeSeriesPage extends Component {
                       top: 50,
                       paddingTop: 5,
                       position: 'absolute',
-                      height: 115,
+                      height: 175,
                       width: 250,
                       backgroundColor: 'grey',
                       shadowColor: '#000',
@@ -154,6 +154,15 @@ class TimeSeriesPage extends Component {
 
                       elevation: 8,
                     }}>
+                     <Text
+                      style={{
+                        ...material.display1White,
+                        textAlign: 'center',
+                        lineHeight: 18,
+                        fontSize: 18,
+                      }}>
+                      Name: {day.name}
+                    </Text>
                     <Text
                       style={{
                         ...material.display1White,
@@ -295,6 +304,7 @@ const styles = StyleSheet.create({
     marginTop:30,
   },
   inputContainer: {
+    
     borderBottomColor: '#F5FCFF',
     backgroundColor: '#FFFFFF',
     borderRadius:30,
@@ -303,7 +313,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems:'center',
     flex:1,
-    margin:10,
+    margin:40,
   },
   icon:{
     width:30,
@@ -317,6 +327,7 @@ const styles = StyleSheet.create({
     marginLeft:16,
     borderBottomColor: '#FFFFFF',
     flex:1,
+    
   },
   inputIcon:{
     marginLeft:15,

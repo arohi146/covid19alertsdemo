@@ -26,7 +26,7 @@ const Header = () => {
           }}>
           <Text
             style={{ ...material.headline, fontSize: 26, fontWeight: '600' }}>
-            COVID-19
+            Vaccination alerts
           </Text>
         </View>
         <TouchableOpacity

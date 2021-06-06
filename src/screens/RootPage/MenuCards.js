@@ -1,8 +1,9 @@
-import { View, Text, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, TouchableOpacity, Linking, ScrollView } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Avatar, Divider } from 'react-native-elements';
 import { material } from 'react-native-typography';
+import InfoCards from './InfoCards';
 
 const MenuCards = ({ navigation }) => {
   const [Data, setData] = useState([]);
@@ -46,9 +47,9 @@ const MenuCards = ({ navigation }) => {
         <TouchableOpacity //LATEST NEWS
           onPress={() => navigation.push('News')}
           style={{
-            backgroundColor: '#25CCF7',
+            backgroundColor: '#000080',
             borderWidth: 0,
-            borderRadius: 7,
+            borderRadius: 0,
             flex: 1,
             marginHorizontal: 12,
             shadowColor: '#000',
@@ -91,11 +92,27 @@ const MenuCards = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
         </View>
-      <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
+        <View
+            style={{
+              paddingLeft: 10,
+              backgroundColor: '#fff',
+              height: 30,
+              marginVertical: 10,
+              marginBottom: 15,
+            }}>
+            <Text style={material.headline}>
+              Data at,{' '}
+              <Text style={{ ...material.headline, fontWeight: '700' }}>
+                Your Finger tips !
+              </Text>
+            </Text>
+          </View>
+          
+<View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
         <TouchableOpacity //GLOBAL STATS
           onPress={() => navigation.push('Global')}
           style={{
-            backgroundColor: '#EAB543',
+            backgroundColor: '#804000',
             borderWidth: 0,
             borderRadius: 7,
             flex: 1,
@@ -136,12 +153,10 @@ const MenuCards = ({ navigation }) => {
             INFO
           </Text>
         </TouchableOpacity>
-      </View>
-      <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
         <TouchableOpacity //SAFETY TIPS
           onPress={() => navigation.push('Tips')}
           style={{
-            backgroundColor: '#3B3B98',
+            backgroundColor: '#b30059',
             borderWidth: 0,
             borderRadius: 7,
             flex: 1,
@@ -181,10 +196,13 @@ const MenuCards = ({ navigation }) => {
             TIPS
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity //DAYWISE CASES
+        
+      </View>
+      <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
+       <TouchableOpacity //DAYWISE Vaccine Slots
           onPress={() => navigation.push('Time')}
           style={{
-            backgroundColor: '#82589F',
+            backgroundColor: '#b3b300',
             borderWidth: 0,
             borderRadius: 7,
             flex: 1,
@@ -222,15 +240,13 @@ const MenuCards = ({ navigation }) => {
               left: 5,
               ...material.display2White,
             }}>
-            CASES
+            Slots
           </Text>
         </TouchableOpacity>
-      </View>
-      <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
         <TouchableOpacity //IMPORTANT LINKS
           onPress={() => navigation.push('Links')}
           style={{
-            backgroundColor: '#BDC581',
+            backgroundColor: '#804000',
             borderWidth: 0,
             borderRadius: 7,
             flex: 1,
@@ -271,14 +287,15 @@ const MenuCards = ({ navigation }) => {
             LINKS
           </Text>
         </TouchableOpacity>
-       </View>
+       
+      </View>
       <View style={{ flexDirection: 'row', height: 95, marginBottom: 10 }}>
         <TouchableOpacity //DATA SEARCH
           onPress={() => navigation.push('Search')}
           style={{
-            backgroundColor: '#58B19F',
+            backgroundColor: '#000080',
             borderWidth: 0,
-            borderRadius: 7,
+            borderRadius: 0,
             flex: 1,
             marginHorizontal: 12,
             shadowColor: '#000',
@@ -380,7 +397,7 @@ const MenuCards = ({ navigation }) => {
           style={{
             backgroundColor: '#CAD3C8',
             borderWidth: 0,
-            borderRadius: 7,
+            borderRadius: 0,
             flex: 1,
             marginHorizontal: 12,
             shadowColor: '#000',

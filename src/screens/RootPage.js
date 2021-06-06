@@ -45,6 +45,7 @@ class RootPage extends Component {
               </Text>
             </Text>
           </View>
+          
           <View
             // scrollEnabled
             style={{
@@ -57,6 +58,7 @@ class RootPage extends Component {
             }}>
             <MenuCards navigation={navigation} />
           </View>
+          
           <View
             style={{
               justifyContent: 'center',

@@ -15,7 +15,8 @@ export default class LinksPage extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <AppHeader style={styles.header} title="Links" />
+        <AppHeader style={styles.header} title="Reference Links" />
+        
         <TouchableOpacity
           onPress={() => Linking.openURL('https://www.mohfw.gov.in/')}>
           <Text style={styles.linkText}>

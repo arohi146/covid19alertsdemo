@@ -83,7 +83,7 @@ export function DrawerContent(props) {
            size={25}
            color="#FB0C2C"
          />
-         Cases</Text>
+         Slots</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.links}
