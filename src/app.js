@@ -16,6 +16,17 @@ import TipsPage from './screens/TipsPage';
 import LinksPage from './screens/LinksPage';
 import { DrawerContent } from './Drawer/DrawerContent';
 
+//add these once amplify configurations are done
+// for the app using amplify init
+//refer docs of aws amplify
+//import Amplify from "aws-amplify";
+//import awsExports from "./aws-exports";
+//Amplify.configure(awsExports);
+//configurations done for amplify
+
+//auth imports
+//import { withAuthenticator } from '@aws-amplify/ui-react'
+
 const Drawer = createDrawerNavigator();
 const MainStack = createStackNavigator();
 
@@ -37,7 +48,7 @@ function MainPageNavigator() {
   );
 }
 
-export default function App() {
+const App=()=> {
   const [initRender, setInitRender] = useState(true);
 
   useEffect(() => {
@@ -56,3 +67,5 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+export default App;
