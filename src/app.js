@@ -19,13 +19,13 @@ import { DrawerContent } from './Drawer/DrawerContent';
 //add these once amplify configurations are done
 // for the app using amplify init
 //refer docs of aws amplify
-//import Amplify from "aws-amplify";
-//import awsExports from "./aws-exports";
-//Amplify.configure(awsExports);
+import Amplify from "aws-amplify";
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
 //configurations done for amplify
 
 //auth imports
-//import { withAuthenticator } from '@aws-amplify/ui-react'
+import { withAuthenticator } from 'aws-amplify-react-native'
 
 const Drawer = createDrawerNavigator();
 const MainStack = createStackNavigator();
@@ -48,9 +48,10 @@ function MainPageNavigator() {
   );
 }
 
-const App=()=> {
+function App()
+{
   const [initRender, setInitRender] = useState(true);
-
+  
   useEffect(() => {
     SplashScreen.hide();
     setInitRender(false);
@@ -68,4 +69,4 @@ const App=()=> {
   );
 }
 
-export default App;
+export default withAuthenticator(App);

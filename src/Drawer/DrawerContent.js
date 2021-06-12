@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/AntDesign';
+import {Auth} from 'aws-amplify';
 
 export function DrawerContent(props) {
   return (
@@ -103,9 +104,10 @@ export function DrawerContent(props) {
       <TouchableOpacity
         style={styles.links}
         onPress={() => {
-          BackHandler.exitApp();
+         // BackHandler.exitApp();
+         Auth.signOut();
         }}>
-        <Text style={styles.text}>Exit</Text>
+        <Text style={styles.text}>Signout</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.footer}>
         <Text style={styles.footertext}>

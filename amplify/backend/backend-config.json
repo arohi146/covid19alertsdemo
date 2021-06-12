@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "cowinalertsea7f9299": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
