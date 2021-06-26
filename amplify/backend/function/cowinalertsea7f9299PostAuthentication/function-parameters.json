@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "cowinalertsea7f9299",
+  "functionName": "cowinalertsea7f9299PostAuthentication",
+  "resourceName": "cowinalertsea7f9299PostAuthentication",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "C:\\Users\\Pooja\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\PostAuthentication",
+  "triggerTemplate": "PostAuthentication.json.ejs",
+  "triggerEventPath": "PostAuthentication.event.json",
+  "roleName": "cowinalertsea7f9299PostAuthentication",
+  "skipEdit": true,
+  "enableCors": false
+}

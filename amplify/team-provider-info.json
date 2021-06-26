@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "cowinalertsea7f9299": {}
+      },
+      "function": {
+        "cowinalertsea7f9299PostAuthentication": {
+          "deploymentBucketName": "amplify-cowinalerts-dev-142330-deployment",
+          "s3Key": "amplify-builds/cowinalertsea7f9299PostAuthentication-6a56432b6c7130533658-build.zip"
+        }
       }
     }
   }
